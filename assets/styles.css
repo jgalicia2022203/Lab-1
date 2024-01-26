@@ -1,0 +1,58 @@
+body {
+  background: #18181b;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-text-container {
+  margin-right: 49px;
+}
+
+.right-text-container {
+  margin-left: 49px;
+}
+
+.big-text {
+  color: #fff;
+  font-family: "Microsoft Sans Serif";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding-right: 115px;
+  padding-left: 115px;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  padding-right: 115px;
+  padding-left: 115px;
+  margin-top: 119px;
+}
+
+.images {
+  display: flex;
+}
+
+.MW2 {
+  padding-right: 29px;
+}
