@@ -1,1 +1,3 @@
 # Lab-1
+
+Modifiqué la barra de navegación porque había demasiados iconos en la página principal, lo que daba al usuario la sensación de tener demasiada información. Esto hacía que la página pareciera complicada, algo que no es ideal para un sitio académico. Además, opté por cambiar el carrusel de la página principal por una imagen estática de la institución con mejor calidad y una apariencia más profesional. También ajusté los colores de la sección de plataforma de aprendizaje en línea, ya que la paleta de colores original no era adecuada. Cambié la paleta de colores de esa sección a blanco, azul y celeste, una combinación más fría y apropiada para una página académica.
