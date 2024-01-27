@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #002855;
+}
+
+.nav-bar {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: #002855;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.kinal-logo {
+  margin-left: 21px;
+  margin-right: 17px;
+}
+
+.dropdown-menu {
+  margin-right: 24px;
+}
+
+.main-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.main-buttons a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Microsoft Sans Serif";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 60px;
+}
+
+.kinal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.e-learning {
+  width: 100%;
+  height: 609px;
+}
+
+.e-learning h1 {
+  margin-top: 90px;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40.5px; /* 112.5% */
+}
+
+.e-learning p {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.01);
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.1px; /* 96.25% */
+}
+
+.login-button {
+  margin-left: 45%;
+  text-decoration: 0;
+  display: flex;
+  width: 112.81px;
+  height: 61.02px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #008cb8;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 19.5px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 110px;
+}
+
+.circle {
+  margin-right: 20px;
+  width: 217px;
+  height: 217px;
+  flex-shrink: 0;
+  border-radius: 108.5px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #040349;
+  text-align: center;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.01);
+  font-family: Roboto;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23.63px; /* 112.524% */
+  text-justify: auto;
+}
+
+.form {
+  --input-bg: #fff;
+  /*  background of input */
+  --padding: 1.5em;
+  --rotate: 80deg;
+  /*  rotation degree of input*/
+  --gap: 2em;
+  /*  gap of items in input */
+  --icon-change-color: #15a986;
+  /*  when rotating changed icon color */
+  --height: 40px;
+  /*  height */
+  width: 650px;
+  padding-inline-end: 1em;
+  /*  change this for padding in the end of input */
+  background: var(--input-bg);
+  position: relative;
+  border-radius: 4px;
+}
+
+.form label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--height);
+}
+
+.form input {
+  width: 100%;
+  padding-inline-start: calc(var(--padding) + var(--gap));
+  outline: none;
+  background: none;
+  border: 0;
+}
+/* style for both icons -- search,close */
+.form svg {
+  /* display: block; */
+  color: #111;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  height: 15px;
+}
+/* search icon */
+.icon {
+  position: absolute;
+  left: var(--padding);
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* arrow-icon*/
+.swap-off {
+  transform: rotate(-80deg);
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button */
+.close-btn {
+  /* removing default bg of button */
+  background: none;
+  border: none;
+  right: calc(var(--padding) - var(--gap));
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  padding: 0.1em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: 0.3s;
+  opacity: 0;
+  transform: scale(0);
+  visibility: hidden;
+}
+
+.form input:focus ~ .icon {
+  transform: rotate(var(--rotate)) scale(1.3);
+}
+
+.form input:focus ~ .icon .swap-off {
+  opacity: 1;
+  transform: rotate(-80deg);
+  visibility: visible;
+  color: var(--icon-change-color);
+}
+
+.form input:focus ~ .icon .swap-on {
+  opacity: 0;
+  visibility: visible;
+}
+
+.form input:valid ~ .icon {
+  transform: scale(1.3) rotate(var(--rotate));
+}
+
+.form input:valid ~ .icon .swap-off {
+  opacity: 1;
+  visibility: visible;
+  color: var(--icon-change-color);
+}
+
+.form input:valid ~ .icon .swap-on {
+  opacity: 0;
+  visibility: visible;
+}
+
+.form input:valid ~ .close-btn {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: 0s;
+}

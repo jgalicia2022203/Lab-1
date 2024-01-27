@@ -56,3 +56,21 @@ h1 {
 .MW2 {
   padding-right: 29px;
 }
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 30px;
+}
+
+.nav-bar a {
+  padding-left: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Microsoft Sans Serif";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
